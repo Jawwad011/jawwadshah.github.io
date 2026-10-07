@@ -1,0 +1,574 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PROPS ETL Validation | Muhammad Jawwad Shah</title>
+
+    <meta name="description"
+          content="PROPS ETL validation case study by Muhammad Jawwad Shah.">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            Muhammad Jawwad Shah
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#projects">
+                Projects
+            </a>
+
+            <a href="index.html#skills">
+                Skills
+            </a>
+
+            <a href="index.html#experience">
+                Experience
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- Hero -->
+
+<section class="case-hero">
+
+    <div class="container">
+
+        <p class="section-label">
+            CASE STUDY • 02
+        </p>
+
+        <h1>
+            PROPS ETL
+            <span>Validation</span>
+        </h1>
+
+        <p class="case-intro">
+
+            A source-to-target data validation workflow designed
+            to identify record-level and field-level discrepancies
+            during ETL processes.
+
+        </p>
+
+
+        <div class="case-tech">
+
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>pyodbc</span>
+            <span>SQL Server</span>
+            <span>Excel</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Problem -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="case-grid">
+
+            <div>
+
+                <p class="section-label">
+                    THE PROBLEM
+                </p>
+
+                <h2>
+                    How do you know the
+                    <span>ETL worked correctly?</span>
+                </h2>
+
+            </div>
+
+
+            <div class="case-text">
+
+                <p>
+                    Data was transferred from a source database into
+                    a target database through an ETL process.
+                </p>
+
+                <p>
+                    A reliable validation mechanism was required to
+                    determine whether records and individual fields
+                    in the target matched the expected source data.
+                </p>
+
+                <p>
+                    Manual comparison of large datasets would be
+                    time-consuming and difficult to maintain.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Architecture -->
+
+<section class="section projects-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            DATA FLOW
+        </p>
+
+        <h2>
+            Comparing source data with
+            <span>ETL output.</span>
+        </h2>
+
+
+        <div class="data-flow">
+
+            <div class="flow-box">
+
+                <span>01</span>
+
+                <h3>
+                    Source
+                </h3>
+
+                <p>
+                    Original project database containing
+                    the expected records.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">
+                →
+            </div>
+
+
+            <div class="flow-box">
+
+                <span>02</span>
+
+                <h3>
+                    ETL Process
+                </h3>
+
+                <p>
+                    Data transformation and loading into
+                    the target environment.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">
+                →
+            </div>
+
+
+            <div class="flow-box">
+
+                <span>03</span>
+
+                <h3>
+                    Target
+                </h3>
+
+                <p>
+                    Database containing the transformed
+                    ETL output.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Approach -->
+
+<section class="section">
+
+    <div class="container">
+
+        <p class="section-label">
+            VALIDATION APPROACH
+        </p>
+
+        <h2>
+            Automated comparison at
+            <span>multiple levels.</span>
+        </h2>
+
+
+        <div class="case-steps">
+
+
+            <div class="case-step">
+
+                <span>01</span>
+
+                <h3>
+                    Extract
+                </h3>
+
+                <p>
+                    Retrieved source and target datasets
+                    using SQL Server connections through
+                    Python and pyodbc.
+                </p>
+
+            </div>
+
+
+            <div class="case-step">
+
+                <span>02</span>
+
+                <h3>
+                    Align
+                </h3>
+
+                <p>
+                    Matched records using the appropriate
+                    participant or screening identifiers
+                    for each validation table.
+                </p>
+
+            </div>
+
+
+            <div class="case-step">
+
+                <span>03</span>
+
+                <h3>
+                    Compare
+                </h3>
+
+                <p>
+                    Used Pandas-based comparisons to identify
+                    missing records, duplicate records and
+                    field-level differences.
+                </p>
+
+            </div>
+
+
+            <div class="case-step">
+
+                <span>04</span>
+
+                <h3>
+                    Report
+                </h3>
+
+                <p>
+                    Generated a structured validation output
+                    showing which records and fields required
+                    investigation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Validation Logic -->
+
+<section class="section projects-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            VALIDATION LOGIC
+        </p>
+
+        <h2>
+            Finding the exact
+            <span>data discrepancy.</span>
+        </h2>
+
+
+        <div class="technical-grid">
+
+
+            <div class="technical-card">
+
+                <h3>
+                    Record Validation
+                </h3>
+
+                <p>
+                    Checked whether expected source records
+                    existed in the target dataset.
+                </p>
+
+            </div>
+
+
+            <div class="technical-card">
+
+                <h3>
+                    Duplicate Detection
+                </h3>
+
+                <p>
+                    Compared records to identify unexpected
+                    duplicate rows in the validation dataset.
+                </p>
+
+            </div>
+
+
+            <div class="technical-card">
+
+                <h3>
+                    Field Comparison
+                </h3>
+
+                <p>
+                    Compared corresponding fields between
+                    source and target records to identify
+                    specific value mismatches.
+                </p>
+
+            </div>
+
+
+            <div class="technical-card">
+
+                <h3>
+                    Cutoff-Based Validation
+                </h3>
+
+                <p>
+                    Applied an ETL timing cutoff so validation
+                    was performed against data expected to
+                    have completed processing.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Technical -->
+
+<section class="section">
+
+    <div class="container">
+
+        <p class="section-label">
+            TECHNOLOGY
+        </p>
+
+        <h2>
+            Python connected the
+            <span>validation workflow.</span>
+        </h2>
+
+
+        <div class="case-highlight">
+
+            <div>
+
+                <h2>
+                    SQL
+                    <span>+</span>
+                    Python
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    SQL Server was used to retrieve the required
+                    datasets while Python provided the automation
+                    layer for comparison and validation.
+                </p>
+
+                <p>
+                    Pandas was used to manipulate and compare
+                    datasets, while pyodbc provided the database
+                    connection between Python and SQL Server.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Outcome -->
+
+<section class="section projects-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            OUTCOME
+        </p>
+
+        <h2>
+            Moving from manual checking to
+            <span>repeatable validation.</span>
+        </h2>
+
+
+        <div class="outcome-grid">
+
+            <div>
+
+                <strong>
+                    Automated Comparison
+                </strong>
+
+                <p>
+                    Large source and target datasets could be
+                    compared programmatically rather than
+                    manually row by row.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Field-Level Visibility
+                </strong>
+
+                <p>
+                    Validation results could identify the
+                    specific field where a mismatch occurred.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Repeatable QC
+                </strong>
+
+                <p>
+                    The validation workflow could be executed
+                    repeatedly as part of the ETL quality-control
+                    process.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Back -->
+
+<section class="case-back">
+
+    <div class="container">
+
+        <a href="index.html#projects">
+            ← Back to Projects
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 Muhammad Jawwad Shah
+        </p>
+
+        <p>
+            Data Analyst • BI • Data & Automation
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```
