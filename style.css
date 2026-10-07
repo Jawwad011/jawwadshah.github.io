@@ -433,6 +433,17 @@ a {
     background: #0d1218;
 }
 
+.projects-intro {
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    color: #8995a1;
+
+    font-size: 16px;
+}
+
+
 .projects-grid {
     margin-top: 50px;
 
@@ -442,6 +453,7 @@ a {
 
     gap: 20px;
 }
+
 
 .project-card {
     padding: 30px;
@@ -457,31 +469,107 @@ a {
         border-color 0.2s ease;
 }
 
+
 .project-card:hover {
     transform: translateY(-5px);
 
     border-color: #526170;
 }
 
-.project-number {
-    color: #596674;
 
-    font-size: 13px;
+/* Project header */
+
+.project-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
 
     margin-bottom: 30px;
 }
 
+
+.project-number {
+    color: #596674;
+
+    font-size: 13px;
+}
+
+
+.project-type {
+    color: #71808e;
+
+    font-size: 9px;
+
+    letter-spacing: 1.3px;
+
+    border: 1px solid #303b46;
+
+    padding: 5px 7px;
+
+    border-radius: 3px;
+}
+
+
+/* Project title */
+
 .project-card h3 {
     font-size: 24px;
 
-    margin-bottom: 15px;
+    line-height: 1.2;
+
+    margin-bottom: 18px;
 }
 
-.project-card p {
-    color: #8995a1;
+
+/* Problem */
+
+.project-problem {
+    color: #9aa5b0;
 
     font-size: 14px;
+
+    line-height: 1.7;
 }
+
+
+/* Approach */
+
+.project-section {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #252f38;
+}
+
+
+.project-label {
+    display: block;
+
+    color: #8fb9d9;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.project-section p {
+    color: #7f8b97;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* Technologies */
 
 .project-tech {
     display: flex;
@@ -493,16 +581,61 @@ a {
     margin: 25px 0;
 }
 
+
+.project-tech span {
+    border: 1px solid #303b46;
+
+    color: #aeb9c4;
+
+    padding: 5px 9px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+}
+
+
+/* Case study link */
+
 .project-link {
+    display: inline-block;
+
     color: #a9cde8;
 
     text-decoration: none;
 
     font-size: 14px;
+
+    margin-top: 5px;
 }
+
 
 .project-link:hover {
     color: #ffffff;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================
+   PROJECTS RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
